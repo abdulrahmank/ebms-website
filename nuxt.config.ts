@@ -4,10 +4,41 @@ export default defineNuxtConfig({
   devtools: { enabled: true },
 
   modules: [
-    '@nuxt/content',
     '@nuxt/fonts',
     '@nuxt/icon',
     '@nuxt/image',
-    '@nuxt/scripts'
-  ]
+    '@nuxt/scripts',
+    '@nuxtjs/tailwindcss',
+    '@nuxtjs/i18n',
+  ],
+
+  i18n: {
+    lazy: false, // disable lazy loading to test
+    langDir: 'locales',
+    locales: [
+      {code: 'en', iso: 'en-US', name: 'English', file: 'en.json', dir: 'ltr'},
+    ],
+    defaultLocale: 'en',
+    strategy: 'prefix_except_default',
+    detectBrowserLanguage: {
+      useCookie: true,
+      cookieKey: 'ebms_locale',
+      redirectOn: 'root'
+    },
+    vueI18n: './i18n.config.ts'
+  },
+
+  build: {
+    transpile: ['vue-i18n']
+  },
+
+  tailwindcss: {
+    cssPath: '~/assets/css/tailwind.css',
+    configPath: 'tailwind.config.js',
+    exposeConfig: false,
+    injectPosition: 0,
+    viewer: true,
+  },
+  pageTransition: { name: 'page', mode: 'out-in' },
+  layoutTransition: { name: 'layout', mode: 'out-in' },
 })
