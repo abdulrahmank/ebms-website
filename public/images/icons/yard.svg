@@ -1,18 +1,26 @@
-<svg width="48" height="48" viewBox="0 0 48 48" fill="none" xmlns="http://www.w3.org/2000/svg">
-    <rect x="6" y="16" width="10" height="18" stroke="#0066CC" stroke-width="2"/>
-    <rect x="19" y="16" width="10" height="18" stroke="#0066CC" stroke-width="2"/>
-    <rect x="32" y="16" width="10" height="18" stroke="#0066CC" stroke-width="2"/>
-    <path d="M4 34H44" stroke="#0066CC" stroke-width="2"/>
-    <path d="M6 20H16" stroke="#0066CC" stroke-width="2"/>
-    <path d="M19 20H29" stroke="#0066CC" stroke-width="2"/>
-    <path d="M32 20H42" stroke="#0066CC" stroke-width="2"/>
-    <path d="M6 30H16" stroke="#0066CC" stroke-width="2"/>
-    <path d="M19 30H29" stroke="#0066CC" stroke-width="2"/>
-    <path d="M32 30H42" stroke="#0066CC" stroke-width="2"/>
-    <path d="M11 16V12" stroke="#0066CC" stroke-width="2" stroke-linecap="round"/>
-    <path d="M24 16V12" stroke="#0066CC" stroke-width="2" stroke-linecap="round"/>
-    <path d="M37 16V12" stroke="#0066CC" stroke-width="2" stroke-linecap="round"/>
-    <rect x="8" y="22" width="6" height="6" fill="#0066CC" fill-opacity="0.4"/>
-    <rect x="21" y="22" width="6" height="6" fill="#0066CC" fill-opacity="0.4"/>
-    <rect x="34" y="22" width="6" height="6" fill="#0066CC" fill-opacity="0.4"/>
+<svg xmlns="http://www.w3.org/2000/svg" width="60" height="60" viewBox="0 0 60 60">
+  <g id="Group_15304" data-name="Group 15304" transform="translate(-846 -2219.769)">
+    <rect id="Rectangle_4654" data-name="Rectangle 4654" width="60" height="60" transform="translate(846 2219.769)" fill="none"/>
+    <g id="Group_15303" data-name="Group 15303" transform="translate(66 8.769)">
+      <path id="Rectangle_4531" data-name="Rectangle 4531" d="M23,0h7a7,7,0,0,1,7,7V30a7,7,0,0,1-7,7H7a7,7,0,0,1-7-7V23A23,23,0,0,1,23,0Z" transform="translate(784.663 2222.5)" fill="#cdb1d0"/>
+      <g id="Group_15417" data-name="Group 15417" transform="translate(-2)">
+        <g id="Rectangle_4706" data-name="Rectangle 4706" transform="translate(802 2235)" fill="none" stroke="#000" stroke-width="2">
+          <rect width="17" height="10" stroke="none"/>
+          <rect x="1" y="1" width="15" height="8" fill="none"/>
+        </g>
+        <g id="Rectangle_4707" data-name="Rectangle 4707" transform="translate(817 2235)" fill="none" stroke="#000" stroke-width="2">
+          <rect width="17" height="10" stroke="none"/>
+          <rect x="1" y="1" width="15" height="8" fill="none"/>
+        </g>
+        <g id="Rectangle_4708" data-name="Rectangle 4708" transform="translate(802 2243)" fill="none" stroke="#000" stroke-width="2">
+          <rect width="17" height="10" stroke="none"/>
+          <rect x="1" y="1" width="15" height="8" fill="none"/>
+        </g>
+        <g id="Rectangle_4709" data-name="Rectangle 4709" transform="translate(817 2243)" fill="none" stroke="#000" stroke-width="2">
+          <rect width="17" height="10" stroke="none"/>
+          <rect x="1" y="1" width="15" height="8" fill="none"/>
+        </g>
+      </g>
+    </g>
+  </g>
 </svg>

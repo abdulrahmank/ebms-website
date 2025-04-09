@@ -11,12 +11,7 @@
           <ul class="count-wrapper">
             <li v-for="(item, index) in features" :key="index">
               <div class="count-item" :class="`item-${index+1}`">{{ item.count }}</div>
-            </li>
-          </ul>
-
-          <ul class="prod-txt-wrap">
-            <li class="prod-txt" v-for="(item, index) in features" :key="index">
-              <span>{{ item.text }}</span>
+              <span class="prod-txt">{{ item.text }}</span>
             </li>
           </ul>
         </div>
