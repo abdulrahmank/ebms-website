@@ -3,6 +3,7 @@
     <BannerCarousel />
     <HomeSolutions />
     <GrowthBlock />
+    <TestimonialSection />
     <LeadersBlock />
     <DemoSection />
   </div>
@@ -12,6 +13,7 @@
 import BannerCarousel from '~/components/home/BannerCarousel.vue'
 import HomeSolutions from '~/components/home/HomeSolutions.vue'
 import GrowthBlock from '~/components/home/GrowthBlock.vue'
+import TestimonialSection from '~/components/home/TestimonialSection.vue'
 import LeadersBlock from '~/components/home/LeadersBlock.vue'
 import DemoSection from '~/components/home/DemoSection.vue'
 

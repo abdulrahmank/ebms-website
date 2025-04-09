@@ -1,0 +1,29 @@
+[
+  {
+    "id": 1,
+    "company": "SEAPORT LINE(INDIA) PVT LTD",
+    "logo": "/images/seaport_logo.jpg",
+    "content": [
+      "Digital Transformation is crucial to our core growth strategy",
+      "eBMS, our highly qualified and reliable partner, has helped to enable our businesses with \"Digital Transformation\"",
+      "We heartily recommend the eBMS Solution Suite. We look forward to an enduring association with them to achieve significant business impact and Many more opportunities to work with them"
+    ],
+    "author": {
+      "name": "J.A. FAIZUDEEN",
+      "title": "Director, SEAPORT LINE(INDIA) PVT LTD"
+    }
+  },
+  {
+    "id": 2,
+    "company": "SEAHORSE SHIP AGENCIES PVT LTD",
+    "logo": "/images/seahorse_logo.png",
+    "content": [
+      "We are delighted to collaborate with eBMS, a company that is devoted to constantly exploring technology innovations for the global Shipping and Logistics domain.",
+      "The eBMS Shipping and Logistics solution suite helped us get \"end to end visibility\" of activities; resulting in us being agile and responsive in dynamic market situations."
+    ],
+    "author": {
+      "name": "ANAND HARSHE",
+      "title": "GENERAL MANAGER - FINANCE & ADMIN, SEAHORSE SHIP AGENCIES PVT LTD"
+    }
+  }
+]
