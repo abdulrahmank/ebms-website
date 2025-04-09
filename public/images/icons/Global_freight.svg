@@ -1,9 +1,13 @@
-<svg width="48" height="48" viewBox="0 0 48 48" fill="none" xmlns="http://www.w3.org/2000/svg">
-    <circle cx="24" cy="24" r="16" stroke="#0066CC" stroke-width="2"/>
-    <path d="M24 8V40" stroke="#0066CC" stroke-width="2"/>
-    <path d="M8 24H40" stroke="#0066CC" stroke-width="2"/>
-    <path d="M12 14C16.6667 18.6667 31.3333 18.6667 36 14" stroke="#0066CC" stroke-width="2" stroke-linecap="round"/>
-    <path d="M12 34C16.6667 29.3333 31.3333 29.3333 36 34" stroke="#0066CC" stroke-width="2" stroke-linecap="round"/>
-    <circle cx="16" cy="19" r="2" fill="#0066CC"/>
-    <circle cx="32" cy="29" r="2" fill="#0066CC"/>
+<svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="40" height="40" viewBox="0 0 40 40">
+  <defs>
+    <clipPath id="clip-path">
+      <rect id="Rectangle_4559" data-name="Rectangle 4559" width="40" height="40" transform="translate(1147 111)" fill="#e09a9a"/>
+    </clipPath>
+  </defs>
+  <g id="Mask_Group_21" data-name="Mask Group 21" transform="translate(-1147 -111)" clip-path="url(#clip-path)">
+    <g id="Group_15073" data-name="Group 15073" transform="translate(1149.535 117.205)">
+      <path id="Path_23735" data-name="Path 23735" d="M0,0H14.3a14.3,14.3,0,0,1,14.3,14.3h0A14.3,14.3,0,0,1,0,14.3Z" fill="#c4c1ef"/>
+      <path id="Path_23736" data-name="Path 23736" d="M11.986,21.971a9.986,9.986,0,1,1,9.986-9.986A9.986,9.986,0,0,1,11.986,21.971ZM9.7,19.642a17.874,17.874,0,0,1-1.681-6.657H4.059A8,8,0,0,0,9.7,19.642Zm.32-6.657a15.892,15.892,0,0,0,1.967,6.742,15.882,15.882,0,0,0,1.967-6.742H10.019Zm9.894,0H15.953a17.875,17.875,0,0,1-1.681,6.657A8,8,0,0,0,19.912,12.984Zm-15.853-2H8.018A17.874,17.874,0,0,1,9.7,4.33a8,8,0,0,0-5.64,6.657Zm5.96,0h3.932a15.882,15.882,0,0,0-1.966-6.742,15.882,15.882,0,0,0-1.967,6.742ZM14.272,4.33a17.874,17.874,0,0,1,1.681,6.657h3.959a8,8,0,0,0-5.64-6.657Z" transform="translate(13.1 2.238)"/>
+    </g>
+  </g>
 </svg>

@@ -122,6 +122,7 @@ const logisticsSolutions = [
 <style scoped>
 .home-solution-wrap {
   padding: 4rem 0;
+  background: transparent linear-gradient(129deg, #fcf8ef 0%, #dff0f7 36%, #f7f0ff 74%, #e6fff8 100%) 0% 0% no-repeat padding-box;;
   background-color: #f8f9fa;
 }
 
