@@ -12,6 +12,14 @@ export default defineNuxtConfig({
     '@nuxtjs/i18n',
   ],
 
+  app: {
+    head: {
+      link: [
+        {rel: 'icon', type: 'image/png', href: '/favicon.png'}
+      ],
+    }
+  },
+
   i18n: {
     lazy: false, // disable lazy loading to test
     langDir: 'locales',
