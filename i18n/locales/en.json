@@ -1,1 +1,125 @@
-{}
+{
+  "navigation": {
+    "digital_solutions": "Digital Solutions",
+    "digital_technology": "Digital Technology",
+    "p2idt": "P2iDT",
+    "partners": "Partners",
+    "careers": "Careers",
+    "about_us": "About Us",
+    "request_demo": "REQUEST DEMO"
+  },
+  "home": {
+    "banner": {
+      "digital_quotient": {
+        "title": "Digital Quotient",
+        "description": "Readiness for the $15 Trillion Transportation and Logistics market by 2030",
+        "explore_button": "EXPLORE NOW",
+        "demo_button": "REQUEST DEMO"
+      },
+      "iot_ai_ml": {
+        "title": "IOT/ AI/ ML",
+        "description": "Merging human and technical capabilities for the new transport and logistics models",
+        "explore_button": "EXPLORE NOW",
+        "demo_button": "REQUEST DEMO"
+      },
+      "going_digital": {
+        "title": "Going Digital",
+        "description": "Not a question of if...but when and how for transport and logistics organizations",
+        "explore_button": "EXPLORE NOW",
+        "demo_button": "REQUEST DEMO"
+      }
+    },
+    "solutions": {
+      "title": "eBMS Solutions",
+      "subtitle": "Automation that enriches your Customer's experience",
+      "shipping": {
+        "title": "SHIPPING",
+        "liner": {
+          "title": "Liner",
+          "description": "Digitizing core operations with integrated enterprise system"
+        },
+        "agency_house": {
+          "title": "Agency House",
+          "description": "Tackling your complex activiites with advanced automation."
+        },
+        "feeder": {
+          "title": "Feeder",
+          "description": "Optimizing vessel port time with Digital technology & seamless information flow to all stakeholders."
+        },
+        "nvocc": {
+          "title": "NVOCC",
+          "description": "Integrating your network into a single operating digital platform"
+        }
+      },
+      "logistics": {
+        "title": "LOGISTICS",
+        "global_forwarding": {
+          "title": "Global Forwarding",
+          "description": "Reducing operational complexity with Advanced analytics"
+        },
+        "transport": {
+          "title": "Transport Solution",
+          "description": "Making first mile effective with IOT and mobile solutions"
+        },
+        "container_yard": {
+          "title": "Container Yard",
+          "description": "Simplified, integrated work flows for Container yard time sensitive activities"
+        },
+        "warehouse": {
+          "title": "Warehouse / 3PL Solution",
+          "description": "Creating a parallel digital workforce with RPA / BOTS taking over the drudgery."
+        }
+      }
+    },
+    "growth": {
+      "title": "Experience Sustainable Growth",
+      "subtitle": "Drive Productivity",
+      "features": {
+        "revenue": {
+          "count": "80+",
+          "text": "Revenue Management Features"
+        },
+        "cost": {
+          "count": "53+",
+          "text": "Cost Control Features"
+        },
+        "memory": {
+          "count": "110+",
+          "text": "User Memory Freed Not Depended Features"
+        },
+        "productivity": {
+          "count": "67+",
+          "text": "Productivity Features"
+        },
+        "data_entry": {
+          "count": "51+",
+          "text": "Data Entry Reduction Feature"
+        },
+        "customer": {
+          "count": "37+",
+          "text": "Customer Delight Features"
+        }
+      }
+    },
+    "leaders": {
+      "title": "Shipping and Logistic Leaders Choose eBMS",
+      "view_more": "VIEW MORE"
+    },
+    "demo": {
+      "text": "You are one more step closer to sky-rocket your Shipping and Logistic business",
+      "button": "BOOK A DEMO"
+    }
+  },
+  "footer": {
+    "digital_solutions": "DIGITAL SOLUTIONS",
+    "digital_technology": "DIGITAL TECHNOLOGY",
+    "about_us": "ABOUT US",
+    "copyright": "© {0} eBMS All Rights Reserved",
+    "privacy": "Privacy Statement",
+    "locations": {
+      "chennai": "CHENNAI",
+      "mumbai": "MUMBAI",
+      "dubai": "DUBAI"
+    }
+  }
+}
