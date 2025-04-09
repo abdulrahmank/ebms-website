@@ -53,7 +53,7 @@ onMounted(() => {
 }
 
 .client-logo {
-  height: 100px;
+  height: 150px;
   display: flex;
   align-items: center;
   justify-content: center;
