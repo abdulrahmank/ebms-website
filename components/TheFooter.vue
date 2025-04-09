@@ -174,7 +174,7 @@
             </li>
             <li>
               <a href="https://www.linkedin.com/company/ebms/" target="_blank">
-                <img alt="LinkedIn" src="/images/icons/linkedIn.svg">
+                <img alt="LinkedIn" src="/images/icons/linkedin.svg">
               </a>
             </li>
           </ul>
