@@ -1,0 +1,18 @@
+{
+  "customers": {
+    "title": "Customers",
+    "breadcrumb": {
+      "home": "Home",
+      "customers": "Customers"
+    },
+    "header": "eBMS Customers",
+    "testimonials": {
+      "title": "Testimonials",
+      "subtitle": "What our clients say about us"
+    },
+    "demo": {
+      "text": "You are one more step closer to sky-rocket your Shipping and Logistic business",
+      "button": "BOOK A DEMO"
+    }
+  }
+}
