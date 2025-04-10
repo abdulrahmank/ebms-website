@@ -70,22 +70,24 @@ testimonials:
 - company: "Ocean Master LLC"
   logo: "/images/clients/Ocean.jpg"
   content:
-    - "eBMS Ship Agency solution has transformed the way we handle tramp operations at our ports."
-    - "We can now create accurate port disbursement accounts in minutes instead of hours, giving us a competitive edge in securing business from principals."
-    - "The tracking of actual costs against estimates has improved our financial clarity and principal relationships significantly."
+  - "eBMS Ship Agency solution has transformed the way we handle tramp operations at our ports."
+  - "We can now create accurate port disbursement accounts in minutes instead of hours, giving us a competitive edge in securing business from principals."
+  - "The tracking of actual costs against estimates has improved our financial clarity and principal relationships significantly."
+
   author:
-  name: "Operations Director"
-  title: "Ocean Master LLC, Dubai"
+    name: "Operations Director"
+    title: "Ocean Master LLC, Dubai"
 
 - company: "Seabridge Maritime"
   logo: "/images/clients/Parekh.jpg"
   content:
-    - "As a busy ship agency with multiple tramp vessel calls, managing the complex tariff calculations and documentation was always challenging."
-    - "With eBMS, we've streamlined our entire operation from quotation to final DA reconciliation, saving hours of coordination time and improving accuracy."
-    - "The IGM EDI integration has been particularly valuable in ensuring compliance and reducing manual documentation work."
+  - "As a busy ship agency with multiple tramp vessel calls, managing the complex tariff calculations and documentation was always challenging."
+  - "With eBMS, we've streamlined our entire operation from quotation to final DA reconciliation, saving hours of coordination time and improving accuracy."
+  - "The IGM EDI integration has been particularly valuable in ensuring compliance and reducing manual documentation work."
+
   author:
-  name: "Managing Director"
-  title: "Seabridge Maritime, India"
+    name: "Managing Director"
+    title: "Seabridge Maritime, India"
 
 impactStats:
 - percentage: "70%"
