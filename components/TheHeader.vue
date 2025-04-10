@@ -331,70 +331,23 @@
         </div>
       </nav>
     </div>
-
-    <div class="product-header">
-      <div class="custom-container">
-        <div class="prod-list-wrap">
-          <ul class="prod-list">
-            <li class="prod-head">SHIPPING</li>
-            <li>
-              <NuxtLink to="/shipping/container-line">
-                <span><img alt="Container" src="/images/icons/Container.svg"></span>
-                Liner
-              </NuxtLink>
-            </li>
-            <li>
-              <NuxtLink to="/shipping/feeder">
-                <span><img alt="Feeder" src="/images/icons/Feeder.svg"></span>
-                Feeder
-              </NuxtLink>
-            </li>
-            <li>
-              <NuxtLink to="/shipping/agency-house">
-                <span><img alt="Agency House" src="/images/icons/Agency_house.svg"></span>
-                Agency House
-              </NuxtLink>
-            </li>
-            <li>
-              <NuxtLink to="/shipping/nvocc">
-                <span><img alt="NVOCC" src="/images/icons/NVOCC.svg"></span>
-                NVOCC
-              </NuxtLink>
-            </li>
-          </ul>
-
-          <ul class="prod-list">
-            <li class="prod-head">LOGISTICS</li>
-            <li>
-              <NuxtLink to="/logistics/global-freight">
-                <span><img alt="Global Freight" src="/images/icons/Global_freight.svg"></span>
-                Global Forwarding
-              </NuxtLink>
-            </li>
-            <li>
-              <NuxtLink to="/logistics/transport">
-                <span><img alt="Transport" src="/images/icons/Transport.svg"></span>
-                Transport
-              </NuxtLink>
-            </li>
-            <li>
-              <NuxtLink to="/shipping/warehouse">
-                <span><img alt="Warehouse" src="/images/icons/Warehouse.svg"></span>
-                Warehouse
-              </NuxtLink>
-            </li>
-          </ul>
-        </div>
-      </div>
-    </div>
   </header>
 </template>
 
 <script setup>
-import { ref } from 'vue'
+import { ref, onMounted, watch } from 'vue'
+import { useRoute } from 'vue-router'
 
 const isNavOpen = ref(false)
 const activeDropdown = ref(null)
+const isSticky = ref(false)
+const route = useRoute()
+
+// Close dropdown when route changes
+watch(() => route.path, () => {
+  isNavOpen.value = false
+  activeDropdown.value = null
+})
 
 const toggleNavbar = () => {
   isNavOpen.value = !isNavOpen.value
@@ -412,6 +365,19 @@ const toggleDropdown = (dropdown) => {
     activeDropdown.value = dropdown
   }
 }
+
+// Handle scroll events for sticky header
+onMounted(() => {
+  const handleScroll = () => {
+    isSticky.value = window.scrollY > 100
+  }
+
+  window.addEventListener('scroll', handleScroll)
+
+  return () => {
+    window.removeEventListener('scroll', handleScroll)
+  }
+})
 </script>
 
 <style scoped>
@@ -420,6 +386,24 @@ const toggleDropdown = (dropdown) => {
   box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
   position: relative;
   z-index: 1000;
+  transition: all 0.3s ease;
+}
+
+.site-header.sticky {
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  animation: slideDown 0.3s ease-in-out;
+}
+
+@keyframes slideDown {
+  from {
+    transform: translateY(-100%);
+  }
+  to {
+    transform: translateY(0);
+  }
 }
 
 .custom-container {
@@ -511,7 +495,7 @@ const toggleDropdown = (dropdown) => {
 
 .nav-item {
   position: relative;
-  margin: 0 1rem;
+  margin: 0 0.75rem;
 }
 
 .nav-link {
@@ -519,8 +503,31 @@ const toggleDropdown = (dropdown) => {
   color: #333;
   text-decoration: none;
   font-weight: 500;
-  padding: 0.5rem 0;
+  padding: 0.75rem 0.5rem;
   cursor: pointer;
+  position: relative;
+  transition: color 0.3s;
+}
+
+.nav-link:after {
+  content: '';
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  width: 0;
+  height: 2px;
+  background-color: #0066cc;
+  transition: width 0.3s ease;
+}
+
+.nav-item:hover .nav-link,
+.nav-item.active .nav-link {
+  color: #0066cc;
+}
+
+.nav-item:hover .nav-link:after,
+.nav-item.active .nav-link:after {
+  width: 100%;
 }
 
 .dropdown-content {
@@ -534,10 +541,15 @@ const toggleDropdown = (dropdown) => {
   box-shadow: 0 8px 16px rgba(0, 0, 0, 0.1);
   border-radius: 4px;
   padding: 1rem;
+  opacity: 0;
+  transform: translateY(10px);
+  transition: opacity 0.3s, transform 0.3s;
 }
 
 .dropdown-content.show {
   display: block;
+  opacity: 1;
+  transform: translateY(0);
 }
 
 .mega-menu {
@@ -556,6 +568,18 @@ const toggleDropdown = (dropdown) => {
   margin-bottom: 1rem;
   font-weight: 600;
   color: #333;
+  position: relative;
+  padding-bottom: 0.5rem;
+}
+
+.menu-block h5:after {
+  content: '';
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  width: 40px;
+  height: 2px;
+  background-color: #0066cc;
 }
 
 .card-wrap {
@@ -568,11 +592,15 @@ const toggleDropdown = (dropdown) => {
   display: block;
   text-decoration: none;
   color: #333;
-  transition: color 0.3s;
+  transition: all 0.3s;
+  padding: 0.5rem;
+  border-radius: 4px;
 }
 
 .menu-card a:hover {
   color: #0066cc;
+  background-color: rgba(0, 102, 204, 0.05);
+  transform: translateX(3px);
 }
 
 .menu-item {
@@ -610,11 +638,15 @@ const toggleDropdown = (dropdown) => {
   gap: 0.5rem;
   text-decoration: none;
   color: #333;
-  transition: color 0.3s;
+  transition: all 0.3s;
+  padding: 0.5rem;
+  border-radius: 4px;
 }
 
 .addon-list li a:hover {
   color: #0066cc;
+  background-color: rgba(0, 102, 204, 0.05);
+  transform: translateX(3px);
 }
 
 .right-menu {
@@ -638,60 +670,13 @@ const toggleDropdown = (dropdown) => {
   padding: 0.5rem 1rem;
   border-radius: 4px;
   font-weight: 500;
-  transition: background-color 0.3s;
+  transition: all 0.3s;
 }
 
 .menu-demo-btn:hover {
   background-color: #004c99;
-}
-
-.product-header {
-  background-color: #f5f5f5;
-  padding: 0.75rem 0;
-  display: none;
-}
-
-.prod-list-wrap {
-  display: flex;
-  justify-content: flex-start;
-  gap: 2rem;
-}
-
-.prod-list {
-  list-style: none;
-  padding: 0;
-  margin: 0;
-}
-
-.prod-head {
-  font-weight: 600;
-  margin-bottom: 0.5rem;
-}
-
-.prod-list li {
-  margin-bottom: 0.25rem;
-}
-
-.prod-list li a {
-  display: flex;
-  align-items: center;
-  gap: 0.5rem;
-  text-decoration: none;
-  color: #333;
-  font-size: 0.875rem;
-}
-
-.prod-list li a span {
-  width: 20px;
-  height: 20px;
-  display: flex;
-  align-items: center;
-  justify-content: center;
-}
-
-.prod-list li a span img {
-  max-width: 100%;
-  max-height: 100%;
+  transform: translateY(-2px);
+  box-shadow: 0 4px 8px rgba(0, 102, 204, 0.2);
 }
 
 .simple-dropdown {
@@ -712,12 +697,15 @@ const toggleDropdown = (dropdown) => {
   text-decoration: none;
   color: #333;
   display: block;
-  padding: 0.5rem 0;
-  transition: color 0.3s;
+  padding: 0.5rem;
+  transition: all 0.3s;
+  border-radius: 4px;
 }
 
 .dropdown-menu li a:hover {
   color: #0066cc;
+  background-color: rgba(0, 102, 204, 0.05);
+  transform: translateX(3px);
 }
 
 /* Mobile responsiveness */
@@ -736,6 +724,8 @@ const toggleDropdown = (dropdown) => {
     flex-direction: column;
     padding: 1rem;
     box-shadow: 0 8px 16px rgba(0, 0, 0, 0.1);
+    max-height: 80vh;
+    overflow-y: auto;
   }
 
   .navbar-collapse.show {
@@ -753,15 +743,25 @@ const toggleDropdown = (dropdown) => {
     border-bottom: 1px solid #eee;
   }
 
+  .nav-link:after {
+    display: none;
+  }
+
   .dropdown-content {
     position: static;
     box-shadow: none;
     display: none;
     padding: 0.5rem 0 0.5rem 1rem;
+    max-height: 0;
+    overflow: hidden;
+    transform: none;
+    transition: max-height 0.3s ease-in-out;
   }
 
   .dropdown-content.show {
     display: block;
+    max-height: 1000px;
+    transform: none;
   }
 
   .mega-menu {
@@ -773,12 +773,13 @@ const toggleDropdown = (dropdown) => {
     width: 100%;
     margin-top: 1rem;
     justify-content: space-between;
+    flex-wrap: wrap;
   }
-}
 
-@media (min-width: 993px) {
-  .product-header {
-    display: block;
+  .menu-demo-btn {
+    margin-top: 0.5rem;
+    width: 100%;
+    text-align: center;
   }
 }
 </style>
