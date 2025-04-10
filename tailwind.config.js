@@ -7,7 +7,8 @@ export default {
         './pages/**/*.vue',
         './plugins/**/*.{js,ts}',
         './app.vue',
-        './error.vue'
+        './error.vue',
+        './content/**/*.md'  // Added content directory
     ],
     theme: {
         extend: {
@@ -31,6 +32,28 @@ export default {
             fontFamily: {
                 sans: ['Lato', ...defaultTheme.fontFamily.sans],
             },
+            typography: (theme) => ({
+                DEFAULT: {
+                    css: {
+                        color: theme('colors.gray.700'),
+                        h1: {
+                            color: theme('colors.secondary.DEFAULT'),
+                        },
+                        h2: {
+                            color: theme('colors.primary.DEFAULT'),
+                        },
+                        h3: {
+                            color: theme('colors.secondary.DEFAULT'),
+                        },
+                        a: {
+                            color: theme('colors.primary.DEFAULT'),
+                            '&:hover': {
+                                color: theme('colors.primary.dark'),
+                            },
+                        },
+                    },
+                },
+            }),
         },
     },
     plugins: [

@@ -10,7 +10,19 @@ export default defineNuxtConfig({
     '@nuxt/scripts',
     '@nuxtjs/tailwindcss',
     '@nuxtjs/i18n',
+    '@nuxt/content',  // Added content module
   ],
+
+  content: {
+    // Content module configuration
+    documentDriven: false,
+    navigation: {
+      fields: ['title', 'description', 'image', '_path']
+    },
+    highlight: {
+      theme: 'github-light'
+    }
+  },
 
   app: {
     head: {
